@@ -1,0 +1,17 @@
+html {
+    height:100%; background-color:transparent}
+
+.thisbody {
+    /* IE10+ */ 
+    background:#FFFFFF;
+
+    margin:0; padding:30px 0 0 100px ; height: 100%; overflow:hidden;
+
+    background-repeat: no-repeat; background-attachment: fixed;
+}
+
+h1 {font:bold 20px Arial,sans-serif; color:#2F75C3; margin:0 0 3px 0; padding:0}
+p {font:12px Arial,sans-serif; color:#333; margin:0 0 30px 0; padding:0}
+#flashContent { width:100%; height:100%; }
+#flashContent2 { margin-top:30px; width:728px; height:100%; text-align: center; }
+#newContent { height:600px; width:300px; border:none; }

@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#cls_container {
+	position: relative;
+	width:298px;
+	height:598px;
+	overflow:hidden;
+	border:1px solid #666;
+}
+
+/************ HEADER ************/
+#cls_header {
+	position:absolute;
+	width:300px;
+	height:91px;
+	top:0; left:0;
+	border-bottom:1px solid #ccc;
+	background:#FFF;
+	z-index:70;
+}
+#cls_logo {
+    width: 142px;
+    height: 38px;
+    top:6px; left:9px;
+    background-position: -5px -533px;
+}
+#cls_freetrialsm {
+    width: 109px;
+    height: 69px;
+    top:11px; left:170px;
+    background-position: -507px -137px;
+}
+#cls_tubs {
+    width: 121px;
+    height: 63px;
+    top:16px; left:305px;
+    background-position: -507px -310px;
+}
+
+/************* SCENE ONE ************/
+#cls_scene1 {
+	position:absolute;
+	width:300px;
+	height:508px;
+	top:92px; left:0;
+}
+#cls_background {
+	position:absolute;
+	width:300px;
+	height:508px;
+	top:92px; left:0;
+	background-position: -5px -5px;
+}
+#cls_geta {
+    width: 186px;
+    height: 52px;
+    top:-255px; left:59px;
+    background-position: -315px -471px;
+}
+#cls_free {
+    width: 253px;
+    height: 76px;
+    top:186px; left:26px;
+    background-position: -315px -51px;
+}
+
+/************ SCENE TWO ************/
+#cls_scene2 {
+	position:absolute;
+	width:300px;
+	height:508px;
+	top:-416px; left:0;
+    background:#FFF;
+	overflow:hidden;
+}
+#cls_grey {
+	position:absolute;
+	width:300px;
+	height:202px;
+	top:0; left:0;
+	background-position: -300px -135px;
+}
+
+#cls_radialwipe{
+	width:300px;
+	height:508px;
+	top:0px; left:0px;
+	background-position: 0 0;
+}
+
+#cls_day {
+    width: 85px;
+    height: 36px;
+    top:260px; left:112px;
+    background-position: -315px -5px;
+}
+#cls_countdown {
+	top:129px; left:40px;
+	width:220px;
+	height:130px;
+	background-position:0 0;
+}
+#cls_tablet {
+    width: 185px;
+    height: 40px;
+    top:605px; left:58px;
+    background-position: -626px -260px;
+}
+#cls_swoosh {
+    width: 290px;
+    height: 245px;
+    top:275px; left:0;
+    background-position: -626px -5px;
+}
+#cls_small30_left {
+	width:106px;
+	height:130px;
+	top:31px; left:40px;
+	background-position: 0 -3770px;
+}
+#cls_small30_right {
+	width:114px;
+	height:130px;
+	top:31px; left:146px;
+	background-position: -106px -3770px ;
+}
+
+#cls_freetriallg {
+	width: 182px;
+    height: 157px;
+    top:7px; left:59px;
+    background-position: -315px -137px;
+	cursor: pointer;
+}
+
+/************ ISI ************/
+#cls_isi_container{
+	width:300px;
+	height:322px;
+	font: 100%/1 Helvetica, Arial, sans-serif; 
+	overflow:hidden;
+	position:absolute;
+	top:603px; left:0;
+	z-index:80;
+	border-top: 1px solid #dbdbdb;
+	/*If you are trying to hide absolute positioned elements make sure the container of those
+	  absolute positioned elements is relatively positioned.*/	
+}
+
+#cls_isi_container h1 {
+	font-size:87.5% /* 14pt */;
+	font-weight:bold;
+	color:#e35205;
+	margin:5px 0 0 10px;
+	padding:0;
+}
+
+#cls_isi_headline{
+	width: 280px;
+	position:relative;
+	margin:5px 0 0 10px;
+	font-size:56.25%;
+	line-height:1em; 
+	color:#000; 
+	text-align:left;
+}
+
+#cls_isi_copy{
+	width:268px;
+	height:220px;
+    position:relative;
+	margin:5px 0 0 10px;
+	overflow:hidden;
+	/*overflow:hidden;
+	position:relative;
+	border: 1px solid #000;
+	If you are trying to hide absolute positioned elements make sure the container of those
+	  absolute positioned elements is relatively positioned.*/	
+}
+
+#cls_isi_copy_text{
+    position:relative;
+}
+
+#cls_isi_copy_text h2 {
+	font-size:60%; /* 10pt */
+	font-weight:bold;
+	color:#e35205;
+	margin:0 0 4px 0;
+	padding:0;
+}
+
+#cls_isi_copy_text p {
+	font-size:60%; /* 10pt */
+	margin: 0 0 4px 0;
+}
+
+#cls_isi_copy_text ul {
+	font-size:60%; /* 10pt */
+	margin: 0 0 4px 0;
+	padding-left:15px;
+}
+
+#cls_isi_copy_text a{
+	color: #000;
+	text-decoration: underline;
+}
+
+#cls_isi_footer {
+	width:300px;
+	height:14px;
+	position:absolute;
+	bottom:0; left:0;
+	z-index:90;
+}
+#cls_isi_patinfo {
+	width: 149px;
+    height: 24px;
+    bottom:0; left:0px;
+    background-position: -410px -5px;
+	cursor:pointer;
+}
+#cls_isi_presinfo {
+	width: 149px;
+    height: 24px;
+    bottom:0; left:151px;
+    background-position: -316px -533px;
+	cursor:pointer;
+}
+
+.cls_isi_bold {
+	font-weight:bold;
+}
+
+.cls_isi_reg {
+	font-size: 7px;
+	line-height: 0;
+	position: relative;
+	vertical-align:baseline;
+	top: -0.3em;
+}
+
+/************ CLASSES ************/
+.cls_numbers {
+	position:absolute;
+	background:url(numbers.png) no-repeat transparent;
+}
+
+.cls_wipe {
+	position:absolute;
+	background:url(wipe.png) no-repeat;
+}
+
+.cls_words {
+	position:absolute;
+	background:url(words.png) no-repeat transparent;
+}
+
+.vison {z-index:100; display:block}
+.visoff{display:none}
+
+
+/************ ROLLOVERS ************/
+.cls_freetriallg_over { background-position: -315px -304px !important; }
+.cls_freetrialsm_over { background-position: -507px -216px !important; }
+.cls_isi_patinfo_over {	background-position: -157px -533px !important; }
+.cls_isi_presinfo_over { background-position: -475px -533px !important; }
+
+/************ CLICKTAGS ************/
+#cls_clicktag {
+	width:300px;
+	height:600px;
+	position:absolute;
+	top:0; left:0;
+	cursor:pointer;
+	z-index:100;
+}

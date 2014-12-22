@@ -1,0 +1,10 @@
+@charset "UTF-8";
+body {
+	background-image: url(../IMGs/nyTimes_Today728x90.jpg);
+	background-repeat: no-repeat;
+}
+#banner{
+	position: absolute;
+	top: 60px;
+	left: 9px;
+}

@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/* IDs */
+.body {
+	padding:0;
+	margin:0;
+}
+#container {
+	width:300px;
+	height:600px;
+	position:relative;
+}
+/*
+#loader {
+    text-align:center;
+    line-height:450px;
+    font-size:20px;
+	font-family:Helvetica, Arial, sans-serif;
+    background-color:#F8F8F8;
+    position: absolute;
+    z-index:400;
+    width: 300px;
+    height: 600px;
+	color:#660460;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+*/
+#slider-holder {
+	width:300px;
+	height:163px;
+	position:absolute;
+	top:192px;
+	left:0;
+}
+#slider {
+}
+
+#swipeanim{
+	width:252px;
+	height:175px;
+	position:absolute;
+	top:210px;
+	left:24px;
+	opacity:0;
+}
+#clicktag1 {
+	width:300px;
+	height:355px;
+	position:absolute;
+	top:0;
+	z-index:88 !important
+}
+#clicktag2 {
+	width:300px;
+	height:230px;
+	position:absolute;
+	top:370px;
+	z-index:90;
+}
+
+/* CLASSES */
+.graphics{
+	background:url(graphics.png) no-repeat;
+	position:absolute; 
+}
+.headlines{
+    background:url(headlines.png) no-repeat;
+	width:258px;
+	height:97px;
+	position:absolute;
+	top:84px;
+	left:24px;
+}
+.bodytext{
+    background:url(bodytext.png) no-repeat;
+	width:252px;
+	height:51px;
+	position:absolute;
+	top:370px;
+	left:24px;
+}
+.swipe {
+	overflow: hidden;
+	position: relative;
+	max-width: 252px; /*182*/
+	width: 100%;
+	height: 122px;
+	top:0;/*18px*/
+	left:24px;	
+
+}
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+	/*width:182px !important;
+	left:35px;*/
+}
+.photos{
+    background:url(photos.png) no-repeat;
+	width:100%; /* width is 182 */
+	height:122px;
+	float: left;
+	position: relative;
+}
+
+.line {
+	width:252px;
+	height:0px;
+	border-top:2px solid #AAAAAA;
+	position:absolute;
+	top:0; 
+	left:24px;
+}
+
+.line-btm {
+	top:auto !important; 
+	bottom:0 !important;
+}
+	
+.graphics.allylogo{background-position:0 0; width:153px; height:68px;top:513px; left:73px;}
+.graphics.learnmore{background-position:0 -70px; width:115px; height:30px; top:441px; left:92px;}
+.graphics.arrowleft{background-position:-68px -123px; width:25px; height:30px; top:56px; left:34px;z-index:110;}
+.graphics.arrowright{background-position:-95px -123px; width:25px; height:30px; top:56px; right:34px;z-index:111;}
+.graphics.swipelong{background-position:0 -104px; width:218px; height:15px; top:135px; left:41px;}
+.graphics.swipeshort{background-position:0 -161px; width:76px; height:15px; top:135px; left:112px;}
+.graphics.fdic{background-position:0 -126px; width:44px; height:30px; top:19px; left:16px;}
+.headlines.ha{background-position:0 0;}
+.headlines.hb{background-position:-300px 0;}
+.headlines.hc{background-position:-600px 0;}
+.headlines.hd{background-position:-900px 0;}
+.headlines.he{background-position:-1200px 0;}
+.headlines.hf{background-position:-1500px 0;}
+.bodytext.ba{background-position:0 0;}
+.bodytext.bb{background-position:0 -51px;}
+.bodytext.bc{background-position:0 -102px;}
+.bodytext.bd{background-position:0 -153px;}
+.bodytext.be{background-position:0 -204px;}
+.bodytext.bf{background-position:0 -255px;}
+.photos.pa{background-position:-24px 0px;}
+.photos.pb{background-position:-24px -150px;} /*top 104px */
+.photos.pc{background-position:-24px -300px;} /*top 208px */
+.photos.pd{background-position:-24px -450px;} /*top 312px */
+.photos.pe{background-position:-24px -600px;} /*top 416px */
+.photos.pf{background-position:-24px -750px;} /*top 520px */
+
+.swiper {
+	background:url(hand2.png) no-repeat;
+	position:absolute;
+}
+
+.swiper.hand {
+	background-position: 0 0;
+	width:53px;
+	height:96px;
+	top:0px;
+	left:105px;
+}
+
+.gradient {
+	width:59px;
+	height:600px;
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e5e5e5 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #e5e5e 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #e5e5e5 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #e5e5e5 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to right,  #e5e5e5 0%,#ffffff 100%); /* W3C */
+	position:absolute;
+}
+
+.gright {
+	right:0 !important;
+	transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari and Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+    -moz-transform: rotate(180deg);
+}
+
+.sblocker {
+	height:130px !important;
+	top:194px;
+}
+.vison {z-index:100; display:block}
+.visoff{display:none}

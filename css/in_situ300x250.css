@@ -1,0 +1,10 @@
+@charset "UTF-8";
+body {
+	background-image: url(../IMGs/nyTimes_Today300x250.jpg);
+	background-repeat: no-repeat;
+}
+#flashContent{
+	position: absolute;
+	top: 309px;
+	left: 653px;
+}

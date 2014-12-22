@@ -1,0 +1,10 @@
+@charset "UTF-8";
+body {
+	background-image: url(../IMGs/nyTimes_300x250exp.jpg);
+	background-repeat: no-repeat;
+}
+#banner{
+	position: absolute;
+	top: 210px;
+	left: 284px;
+}
