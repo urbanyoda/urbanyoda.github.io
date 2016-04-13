@@ -1,7 +1,84 @@
 //$(document).ready(function ()
 (function () {
-    
-    var t= TweenMax;
+  
+    var counter,
+        t;
+    counter = 0;
+
+    function checkInit() {
+        if (!EB.isInitialized())
+        {
+          EB.addEventListener(EBG.EventName.EB_INITIALIZED, loadScripts);
+          // checks if the EB object is initialized, if no - launches the function "wait" which loops back to the function "checkInit" until the EB object is initialized. if it is done initializing - will run the "onInit" function.
+        }
+        else
+        {
+          EB.initExpansionParams(0,0,728,270);
+          loadScripts();
+        }
+    }
+
+    function loadScripts() {
+        loadJsCssFile("https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js", trackProgress);
+        loadJsCssFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js", trackProgress);
+        loadJsCssFile("js/rgbcolor.js", trackProgress);
+        loadJsCssFile("css/styles.css", trackProgress);
+    }
+
+    function trackProgress(){
+        counter++;
+        if(counter == 4){
+            console.log('ELEMENTS SET AND LOADED');
+            loadJsCssFile("js/TweenSprite.min.js", loadNext);
+            loadJsCssFile("https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js", loadNext);
+            loadJsCssFile("js/main.js", loadNext);
+
+        }
+    }
+        
+    function loadNext(){
+        counter++;
+        if(counter == 6){
+            console.log("meow");
+            t = TweenMax;
+            init();
+        }
+    }
+
+    //DYNAMICALLY LOAD JS/CSS + CALLBACK
+        //Source: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
+    function loadJsCssFile(filename,func){
+        var filetype = filename.substring(filename.lastIndexOf('.')+1);
+        if(filetype == 'js'){
+            var fileref = document.createElement('script');
+            fileref.setAttribute('type','text/javascript')
+            fileref.setAttribute('src', filename);
+        }
+        else if(filetype == 'css'){
+            var fileref = document.createElement('link');
+            fileref.setAttribute('rel','stylesheet');
+            fileref.setAttribute('type', 'text/css')
+            fileref.setAttribute('href', filename);
+        }
+        if(typeof fileref!= 'undefined'){
+            if(func){
+                if(fileref.readyState){//IE 8, 9, 10
+                    fileref.onreadystatechange = fileref.onload = function(){
+                        if(fileref.readyState == 'loaded' || fileref.readyState == 'complete'){
+                            fileref.onreadystatechange = null;
+                            func();
+                        }
+                    };
+                }
+                else{//other browsers
+                    fileref.onload = function (){
+                    func();
+                    }
+                }
+            }
+        document.getElementsByTagName('head')[0].appendChild(fileref);
+        }
+    }
     
     function init() {
         console.log("init");
@@ -331,6 +408,6 @@
         });
     }*/
 
-    init();
+    checkInit();
 })();
 //    checkInit();
