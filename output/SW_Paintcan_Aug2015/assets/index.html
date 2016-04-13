@@ -24,7 +24,7 @@
 -->
 </head>
 
-<body onload="checkInit();">
+<body>
     <div id="main">
        <div id="blocker" style="width:335px; height:88px; position:absolute; top:1px; left:175px; background:#fff5ec; z-index:500"></div>
         <div id="collapsed">
@@ -87,87 +87,7 @@
 
     <!--    <div id="newcursor"></div>-->
     
-    <script>
-    var counter;
-    counter = 0;
-
-    function checkInit() {
-        if (!EB.isInitialized())
-        {
-          EB.addEventListener(EBG.EventName.EB_INITIALIZED, wait);
-          // checks if the EB object is initialized, if no - launches the function "wait" which loops back to the function "checkInit" until the EB object is initialized. if it is done initializing - will run the "onInit" function.
-        }
-        else
-        {
-          EB.initExpansionParams(0,0,728,270);
-          loadScripts();
-        }
-    }
-
-    function wait()
-      {
-        checkInit(); //loops back to the checkInit function until the EB object is initialized.
-      }
-
-    function loadScripts() {
-        loadJsCssFile("https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js", trackProgress);
-        loadJsCssFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js", trackProgress);
-        loadJsCssFile("js/rgbcolor.js", trackProgress);
-        loadJsCssFile("css/styles.css", trackProgress);
-    }
-
-    function trackProgress(){
-        counter++;
-        if(counter == 4){
-            console.log('ELEMENTS SET AND LOADED');
-            loadJsCssFile("js/TweenSprite.min.js", loadNext);
-            loadJsCssFile("https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js", loadNext);
-        }
-    }
-        
-    function loadNext(){
-        counter++;
-        if(counter == 6){
-            console.log("meow");
-            loadJsCssFile("js/main.js");
-        }
-    }
-
-    //DYNAMICALLY LOAD JS/CSS + CALLBACK
-        //Source: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
-    function loadJsCssFile(filename,func){
-        var filetype = filename.substring(filename.lastIndexOf('.')+1);
-        if(filetype == 'js'){
-            var fileref = document.createElement('script');
-            fileref.setAttribute('type','text/javascript')
-            fileref.setAttribute('src', filename);
-        }
-        else if(filetype == 'css'){
-            var fileref = document.createElement('link');
-            fileref.setAttribute('rel','stylesheet');
-            fileref.setAttribute('type', 'text/css')
-            fileref.setAttribute('href', filename);
-        }
-        if(typeof fileref!= 'undefined'){
-            if(func){
-                if(fileref.readyState){//IE 8, 9, 10
-                    fileref.onreadystatechange = fileref.onload = function(){
-                        if(fileref.readyState == 'loaded' || fileref.readyState == 'complete'){
-                            fileref.onreadystatechange = null;
-                            func();
-                        }
-                    };
-                }
-                else{//other browsers
-                    fileref.onload = function (){
-                    func();
-                    }
-                }
-            }
-        document.getElementsByTagName('head')[0].appendChild(fileref);
-        }
-    }
-    </script>
+    <script src="js/main.js"></script>
 
 </body>
 

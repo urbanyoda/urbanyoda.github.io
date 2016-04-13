@@ -1,24 +1,49 @@
 //$(document).ready(function ()
 (function () {
   
-    var counter,
-        t;
-    counter = 0;
+    var counter = 0,
+        t,
+        colorlist,
+        $tagline1,
+        $tagline2,
+        $expand,
+        expanded,
+        $collapsed,
+        $canvas1,
+        $canvas2,
+        $canvas3,
+        $canvas4,
+        $canvas5,
+        $canvas6,
+        context1, imageObj1,
+        context2, imageObj2,
+        context3, imageObj3,
+        context4, imageObj4,
+        context5, imageObj5,
+        context6, imageObj6,
+        $paletteholder,
+        $palettename,
+        $palette,
+        currRoom, currCanvas, currContext, currImage, t,
+        isFirstRun;
 
     function checkInit() {
-        if (!EB.isInitialized())
-        {
-          EB.addEventListener(EBG.EventName.EB_INITIALIZED, loadScripts);
-          // checks if the EB object is initialized, if no - launches the function "wait" which loops back to the function "checkInit" until the EB object is initialized. if it is done initializing - will run the "onInit" function.
-        }
-        else
-        {
-          EB.initExpansionParams(0,0,728,270);
-          loadScripts();
-        }
+      console.log("Check RB");
+//        if (!EB.isInitialized())
+//        {
+//          EB.addEventListener(EBG.EventName.EB_INITIALIZED, loadScripts);
+//          // checks if the EB object is initialized, if no - launches the function "wait" which loops back to the function "checkInit" until the EB object is initialized. if it is done initializing - will run the "onInit" function.
+//        }
+//        else
+//        {
+//          EB.initExpansionParams(0,0,728,270);
+//          loadScripts();
+//        }
+      loadScripts();
     }
 
     function loadScripts() {
+      console.log("load scripts");
         loadJsCssFile("https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js", trackProgress);
         loadJsCssFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js", trackProgress);
         loadJsCssFile("js/rgbcolor.js", trackProgress);
@@ -31,8 +56,6 @@
             console.log('ELEMENTS SET AND LOADED');
             loadJsCssFile("js/TweenSprite.min.js", loadNext);
             loadJsCssFile("https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js", loadNext);
-            loadJsCssFile("js/main.js", loadNext);
-
         }
     }
         
@@ -82,6 +105,23 @@
     
     function init() {
         console.log("init");
+        colorlist = ['Natural Wonder Color Collection', '999083', 'edeeea', 'e5cfb1', 'c8a372', '8f949a', 'd2cac3', 'd1bca7', 'dccab4', 'e4e1d8', 'b7aaa2', '907967', 'cbcfd2', '8b7d75', '8c958d', 'd4cec4', 'e8ddce', 'ac9072', 'd4d3c6', 'b3b3ab', 'beb0a1'];
+        $tagline1 = $('#tagline1');
+        $tagline2 = $('#tagline2');
+        $expand = document.querySelector('#expand');
+        $expanded = $('#expanded');
+        $collapsed = $('#collapsed');
+        $canvas1 = $('#canvas1');
+        $canvas2 = $('#canvas2');
+        $canvas3 = $('#canvas3');
+        $canvas4 = $('#canvas4');
+        $canvas5 = $('#canvas5');
+        $canvas6 = $('#canvas6');
+        $paletteholder = $('#paletteholder');
+        $palettename = $('#palettename');
+        $palette = $('#palette');
+        currRoom, currCanvas, currContext, currImage;
+        isFirstRun = true;
         addEventListeners();
         $('#blocker').css("display", "none");
         t.set($tagline1, {alpha:0});
@@ -92,6 +132,81 @@
         t.to($tagline2, 0.5, {alpha:1, ease:Quad.easeOut, delay:4});
         t.to($expand, 0.5, {bottom:6, ease:Quad.easeOut, delay:4.5, onComplete:playButton});
         buildPalette(colorlist);
+      
+
+
+    $paletteholder.hide();
+    $canvas1.hide();
+    $canvas2.hide();
+    $canvas3.hide();
+    $canvas4.hide();
+    $canvas5.hide();
+    $canvas6.hide();
+    
+
+    context1 = $canvas1[0].getContext('2d');
+    imageObj1 = new Image();
+
+    imageObj1.src = 'images/section1.png';
+    imageObj1.onload = function () {
+        /*var img_w = this.width;
+        var img_h = this.height;
+        $canvas1[0].setAttribute('width', String(img_w));
+        $canvas1[0].setAttribute('height', String(img_h));*/
+        $canvas1[0].setAttribute('width', '227');
+        $canvas1[0].setAttribute('height', '181');
+        context1.drawImage(imageObj1, 0, 0);
+    };
+
+    context2 = $canvas2[0].getContext('2d');
+    imageObj2 = new Image();
+
+    imageObj2.src = 'images/section2.png';
+    imageObj2.onload = function () {
+        $canvas2[0].setAttribute('width', '227');
+        $canvas2[0].setAttribute('height', '75');
+        context2.drawImage(imageObj2, 0, 0);
+    };
+    
+    context3 = $canvas3[0].getContext('2d');
+    imageObj3 = new Image();
+
+    imageObj3.src = 'images/section3.png';
+    imageObj3.onload = function () {
+        $canvas3[0].setAttribute('width', '261');
+        $canvas3[0].setAttribute('height', '181');
+        context3.drawImage(imageObj3, 0, 0);
+    };
+      
+    context4 = $canvas4[0].getContext('2d');
+    imageObj4 = new Image();
+
+    imageObj4.src = 'images/section4.png';
+    imageObj4.onload = function () {
+        $canvas4[0].setAttribute('width', '216');
+        $canvas4[0].setAttribute('height', '79');
+        context4.drawImage(imageObj4, 0, 0);
+    };
+    
+    context5 = $canvas5[0].getContext('2d');
+    imageObj5 = new Image();
+    
+    imageObj5.src = 'images/section5.png';
+    imageObj5.onload = function () {
+        $canvas5[0].setAttribute('width', '228');
+        $canvas5[0].setAttribute('height', '178');
+        context5.drawImage(imageObj5, 0, 0);
+    };
+    
+    context6 = $canvas6[0].getContext('2d');
+    imageObj6 = new Image();
+
+    imageObj6.src = 'images/section6.png';
+    imageObj6.onload = function () {
+        $canvas6[0].setAttribute('width', '55');
+        $canvas6[0].setAttribute('height', '70');
+        context6.drawImage(imageObj6, 0, 0);
+    };
     }
     
     function addEventListeners() {
@@ -203,7 +318,6 @@
     
     function expand() {
         reset();
-        EB.expand();
         $expanded.show();
         $collapsed.hide();
     }
@@ -211,106 +325,14 @@
     function collapse() {
         $expanded.hide();
         $collapsed.show();
-        EB.collapse();
     }
 
     function clickthrough() {
-//        console.log();
-        EB.clickthrough("CTA");
+        console.log("clickthrough");
     }
 
     
-    var colorlist = ['Natural Wonder Color Collection', '999083', 'edeeea', 'e5cfb1', 'c8a372', '8f949a', 'd2cac3', 'd1bca7', 'dccab4', 'e4e1d8', 'b7aaa2', '907967', 'cbcfd2', '8b7d75', '8c958d', 'd4cec4', 'e8ddce', 'ac9072', 'd4d3c6', 'b3b3ab', 'beb0a1'];
-    var $tagline1 = $('#tagline1');
-    var $tagline2 = $('#tagline2');
-    var $expand = document.querySelector('#expand');
-    var $expanded = $('#expanded');
-    var $collapsed = $('#collapsed');
-    var $canvas1 = $('#canvas1');
-    var $canvas2 = $('#canvas2');
-    var $canvas3 = $('#canvas3');
-    var $canvas4 = $('#canvas4');
-    var $canvas5 = $('#canvas5');
-    var $canvas6 = $('#canvas6');
-    var $paletteholder = $('#paletteholder');
-    var $palettename = $('#palettename');
-    var $palette = $('#palette');
-    var currRoom, currCanvas, currContext, currImage;
-    var isFirstRun = true;
-
-
-    $paletteholder.hide();
-    $canvas1.hide();
-    $canvas2.hide();
-    $canvas3.hide();
-    $canvas4.hide();
-    $canvas5.hide();
-    $canvas6.hide();
     
-
-    var context1 = $canvas1[0].getContext('2d');
-    var imageObj1 = new Image();
-
-    imageObj1.src = 'images/section1.png';
-    imageObj1.onload = function () {
-        /*var img_w = this.width;
-        var img_h = this.height;
-        $canvas1[0].setAttribute('width', String(img_w));
-        $canvas1[0].setAttribute('height', String(img_h));*/
-        $canvas1[0].setAttribute('width', '227');
-        $canvas1[0].setAttribute('height', '181');
-        context1.drawImage(imageObj1, 0, 0);
-    };
-
-    var context2 = $canvas2[0].getContext('2d');
-    var imageObj2 = new Image();
-
-    imageObj2.src = 'images/section2.png';
-    imageObj2.onload = function () {
-        $canvas2[0].setAttribute('width', '227');
-        $canvas2[0].setAttribute('height', '75');
-        context2.drawImage(imageObj2, 0, 0);
-    };
-    
-    var context3 = $canvas3[0].getContext('2d');
-    var imageObj3 = new Image();
-
-    imageObj3.src = 'images/section3.png';
-    imageObj3.onload = function () {
-        $canvas3[0].setAttribute('width', '261');
-        $canvas3[0].setAttribute('height', '181');
-        context3.drawImage(imageObj3, 0, 0);
-    };
-      
-    var context4 = $canvas4[0].getContext('2d');
-    var imageObj4 = new Image();
-
-    imageObj4.src = 'images/section4.png';
-    imageObj4.onload = function () {
-        $canvas4[0].setAttribute('width', '216');
-        $canvas4[0].setAttribute('height', '79');
-        context4.drawImage(imageObj4, 0, 0);
-    };
-    
-    var context5 = $canvas5[0].getContext('2d');
-    var imageObj5 = new Image();
-    
-    imageObj5.src = 'images/section5.png';
-    imageObj5.onload = function () {
-        $canvas5[0].setAttribute('width', '228');
-        $canvas5[0].setAttribute('height', '178');
-        context5.drawImage(imageObj5, 0, 0);
-    };
-    
-    var context6 = $canvas6[0].getContext('2d');
-    var imageObj6 = new Image();
-
-    imageObj6.src = 'images/section6.png';
-    imageObj6.onload = function () {
-        $canvas6[0].setAttribute('width', '55');
-        $canvas6[0].setAttribute('height', '70');
-        context6.drawImage(imageObj6, 0, 0);
-    };
     
     function tabEvents(e){
         //var mc = e.currentTarget;
@@ -323,7 +345,6 @@
                 t.to(mc, 0.5, {top:239});
                 break;
             case "click":
-                EB.clickthrough("ABOUTNW");
                 collapse();
                 break;
         }
