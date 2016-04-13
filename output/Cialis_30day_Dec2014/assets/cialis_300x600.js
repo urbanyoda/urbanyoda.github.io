@@ -140,7 +140,8 @@ var ctr = (function (){
 	
 	var removeLoader = function(){
 		//console.log('ELEMENTS SET AND LOADED');
-		$loader.remove();
+//		$loader.remove();
+        document.getElementById("cls_container").style.display = "block";
 		addMouseEvents();
 		addTweens();
 	};
