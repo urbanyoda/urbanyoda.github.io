@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.blend {
+    -moz-mix-blend-mode: multiply;
+    mix-blend-mode: multiply;
+}
+
+#pnc {
+    width: 95px;
+    height: 36px;
+    position: absolute;
+    background: url(pnc.svg) no-repeat;
+}
+
+#fallback {
+    width: 127px;
+    height: 97px;
+    position: absolute;
+    display: none;
+}
+
+#intro {
+    background: #FFF;
+}
+
+#main {
+    position: absolute;
+    transform: rotate(0.01deg);
+}
+
+#final {
+    background: #aba398;
+}
+
+#boxes {}
+
+#s0 {
+    width: 24px;
+    height: 6px;
+    background: #af1b02;
+    position: absolute;
+/*
+    top: 250px;
+    right: 300px;
+*/
+}
+
+#s1 {
+    width: 15px;
+    height: 18px;
+    background: #f3bc87;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#s2 {
+    width: 40px;
+    height: 30px;
+    background: #f3be26;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#s3 {
+    width: 28px;
+    height: 37px;
+    background: #ee9c34;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#s4 {
+    width: 24px;
+    height: 41px;
+    background: #e4c7a7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#s5 {
+    width: 46px;
+    height: 12px;
+    background: #e669a2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#legal1 {
+  width:100%;
+  position:absolute;
+  bottom:10px;
+  font: 8.5px Arial, sans-serif;
+  text-align: center;
+  color: #726d66;
+}
+
+#legal {
+    position: absolute;
+    bottom: 13px;
+    right: 9px;
+    font-size: 8px;
+    font-family: Arial, sans-serif;
+    text-align: right;
+    color: #726d66;
+}
+
+#bg {
+    width: 620px;
+    height: 250px;
+    background-image: url(background.jpg);
+    position: absolute;
+}
+
+#truck {
+    width: 640px;
+    height: 201px;
+    left: 620px;
+    bottom: 0px;
+    position: absolute;
+}
+
+#farmerholder {
+    width: 72px;
+	  height: 87px;
+    left: 222px;  
+    bottom: 107px;
+    position: absolute;
+    display: none;
+}
+
+#wheelrear, #wheelfront {
+  width: 32px;
+  height: 32px;
+  background-image: url(wheel.svg);
+  position: absolute;
+}
+
+#wheelrear {
+    top: 120px;
+    left: 293px;
+}
+
+#wheelfront {
+    top: 120px;
+    left: 561px;
+}
+
+#cta {
+    top: 129px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ctaOuter {
+  width: 203px;
+  height: 40px;
+  border: 1px solid #FFF;
+  padding: 7px;
+  display: table;
+}
+
+#ctaInner {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ba1b26;
+  color: #FFF;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+
+/* SPRITESHEET POSITIONING */
+
+#berries {
+    left: 0;
+    top: 0;
+}
+
+#crates {
+  left: 0;
+  bottom: 0;
+}
+
+#fence {
+  right:0;
+  top: 134px;
+}
+
+#logo {
+    left: 10px;
+    bottom: 9px;
+}
+
+#text {
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#truckcrates {
+  left: 227px;
+  top: 30px;
+}
+
+#ute {
+  top: 10px;
+}
+
+#woman {
+  bottom: 35px;
+  right: 310px;
+}
+
+/* SVGSPRITESHEET SIZING */
+
+#logo {
+	width: 68px;
+	height: 52px;
+	background-position: -5px -200px;
+}
+
+#text {
+	width: 559px;
+	height: 64px;
+	background-position: -5px -5px;
+}
+
+/* SPRITESHEET SIZING */
+
+#fence {
+	width: 58px;
+	height: 100px;
+	background-position: 0 -0px;
+}
+
+#farmer {
+	width: 72px;
+	height: 87px;
+	background-position: 0 -100px;
+}
+
+#crates {
+	width: 154px;
+	height: 96px;
+	background-position: 0 -187px;
+}
+
+#truckcrates {
+	width: 168px;
+	height: 64px;
+	background-position: 0 -283px;
+}
+
+#woman {
+	width: 284px;
+	height: 124px;
+	background-position: 0 -347px;
+}
+
+#berries {
+	width: 355px;
+	height: 143px;
+	background-position: 0 -471px;
+}
+
+#ute {
+	width: 640px;
+	height: 191px;
+	background-position: 0 -614px;
+}
+
+
+/* SPRITESHEET - Already retina ready! */
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    transform: rotate(0.01deg);
+    position: absolute;
+}
+
+.svgsprite {
+    background-image: url(svgspritesheet.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+}

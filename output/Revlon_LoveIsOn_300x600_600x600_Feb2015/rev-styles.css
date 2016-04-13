@@ -1,0 +1,851 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2959901, 2015-01-26T11:23:30-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: CoalhandLuke by JOEBOB graphics
+ * URL: http://www.myfonts.com/fonts/joebob/coalhandluke/regular/
+ * Copyright: &#x00A9; 2014 JJW van der Ham / JOEBOB graphics
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2959901
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/2d2a1d");*/
+  
+/*
+@font-face {
+    font-family: 'CoalhandLuke';
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/2D2A1D_0_0.eot');
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/2D2A1D_0_0.eot?#iefix') format('embedded-opentype'),url('http://frederickjaime.info/Revlon/extract/webfonts/2D2A1D_0_0.woff2') format('woff2'),url('http://frederickjaime.info/Revlon/extract/webfonts/2D2A1D_0_0.woff') format('woff'),url('http://frederickjaime.info/Revlon/extract/webfonts/2D2A1D_0_0.ttf') format('truetype');
+
+}
+*/
+
+/*
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_light_macroman/2D2A1D_0_0.eot');
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_light_macroman/2D2A1D_0_0.eot?#iefix') format('embedded-opentype'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_light_macroman/2D2A1D_0_0.woff2') format('woff2'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_light_macroman/2D2A1D_0_0.woff') format('woff'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_light_macroman/2D2A1D_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSansReg';
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_regular_macroman/2D2A1D_0_0.eot');
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_regular_macroman/2D2A1D_0_0.eot?#iefix') format('embedded-opentype'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_regular_macroman/2D2A1D_0_0.woff2') format('woff2'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_regular_macroman/2D2A1D_0_0.woff') format('woff'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_regular_macroman/2D2A1D_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_semibold_macroman/2D2A1D_0_0.eot');
+    src: url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_semibold_macroman/2D2A1D_0_0.eot?#iefix') format('embedded-opentype'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_semibold_macroman/2D2A1D_0_0.woff2') format('woff2'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_semibold_macroman/2D2A1D_0_0.woff') format('woff'),url('http://frederickjaime.info/Revlon/extract/webfonts/OpenSans/opensans_semibold_macroman/2D2A1D_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CheddarJack';
+    src: url('http://frederickjaime.info//Revlon/extract/webfonts/CheddarJack/2D2A1D_0_0.eot');
+    src: url('http://frederickjaime.info//Revlon/extract/webfonts/CheddarJack/2D2A1D_0_0.eot?#iefix') format('embedded-opentype'),url('http://frederickjaime.info//Revlon/extract/webfonts/CheddarJack/2D2A1D_0_0.woff2') format('woff2'),url('http://frederickjaime.info//Revlon/extract/webfonts/CheddarJack/2D2A1D_0_0.woff') format('woff'),url('http://frederickjaime.info//Revlon/extract/webfonts/CheddarJack/2D2A1D_0_0.ttf') format('truetype');
+}
+*/
+
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_light_macroman/OpenSans-Light-webfont.eot');
+    src: url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_light_macroman/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff'),url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_light_macroman/OpenSans-Light-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSansReg';
+    src: url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_regular_macroman/OpenSans-Regular-webfont.eot');
+    src: url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot');
+    src: url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff') format('woff'),url('http://shaneakins.com/revlon/webfonts/OpenSans/opensans_semibold_macroman/OpenSans-Semibold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CheddarJack';
+    src: url('http://shaneakins.com/revlon/webfonts/CheddarJack/CheddarJack.eot');
+    src: url('http://shaneakins.com/revlon/webfonts/CheddarJack/CheddarJack?#iefix') format('embedded-opentype'),url('http://shaneakins.com/revlon/webfonts/CheddarJack/CheddarJack.woff') format('woff'),url('http://shaneakins.com/revlon/webfonts/CheddarJack/CheddarJack.ttf') format('truetype');
+}
+
+body, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSansLight', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+}
+input {
+    font: 25px 'OpenSansLight', sans-serif;
+}
+input::input-placeholder {
+    color:#58595b;
+    text-align: center;
+}
+/*div[id^="rev"] {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}*/
+
+
+
+#bg-exit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+.rev-images {
+    background: url(rev-images.png) no-repeat;
+}
+/* CONTAINERS */
+#rev-container {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    
+}
+#rev-collapsed {
+    background: #000;
+    width: 300px;
+    height: 600px;
+    position: relative;
+    left:300px;
+    overflow: hidden;
+}
+#rev-intro, #rev-form {
+    background: #000;
+    width: 300px;
+    height: 600px;
+    position: absolute;
+}
+#rev-form {
+    top:0;
+    left:300px;
+}
+#rev-background {
+    width: 100%;
+    height: 100%;
+}
+#rev-expanded, #rev-preview, #rev-shades, #rev-share, #rev-email {
+    width:600px;
+    height: 600px;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #000;
+}
+
+#rev-preview {
+    width:594px;
+    height:594px;
+    border: 3px solid #000;
+}
+
+#rev-share {
+    background: rgba(0,0,0,0.85);
+    visibility: hidden;
+}
+#rev-email {
+    background: rgba(0,0,0,0.85);
+    display: none;
+}
+.rev-exit {
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+
+}
+/* COLLAPSED */
+#rev-logo {
+    background-position: -234px -354px;
+    width: 173px;
+    height: 48px;
+    position: absolute;
+    bottom: 27px;
+    left: 63px;
+}
+
+#rev-ilu {
+    font: 26px / 26px 'OpenSansLight', sans-serif;
+    text-align:center;
+    color: #FFF;
+    width: 300px;
+    position: absolute;
+    top: 157px;
+    visibility: hidden;
+    
+}
+
+#rev-copyright {
+    background-position: -440px -5px;
+    width: 7px;
+    height: 45px;
+    position: absolute;
+    bottom: 29px;
+    right: 4px;
+    z-index: 200;
+}
+#rev-youre, #rev-bold, #rev-brilliant, #rev-intense {
+    width: 100%;
+    position: absolute;
+    top: 193px;
+    margin-top: -30px;
+    visibility: hidden;
+    font: 400 92px CheddarJack;
+    color: #ec0928;
+    text-align: center;
+    opacity: 0;
+    height: auto;
+  
+    padding: 20px 0px 20px 0px;
+
+}
+#rev-bold{
+    margin-top: -35px;
+    
+}
+
+#rev-brilliant{
+    margin-top: -30px;
+    font: 400 98px CheddarJack;
+    
+
+}
+
+#rev-bold, #rev-brilliant, #rev-intense {
+    top: 303px; 
+    letter-spacing: -0.04em;
+}
+
+#rev-expresshare {
+    width: 100%;
+    height: 51px;
+    position: absolute;
+    top: 119px; /*48px*/
+    font: 30px / 28px 'OpenSansSemibold', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    visibility: hidden;
+}
+#rev-sendnote {
+    background-position: -5px -412px;
+    width: 282px;
+    height: 65px;
+    position: absolute;
+    top: 119px;
+    left: 8px; /*8px*/
+    visibility: hidden;
+}
+
+#rev-lipstick {
+    /*background-position: -541px -5px;*/
+    background-position: -584px -5px;
+    width: 131px;/*79*/
+    height: 381px;/*290*/
+    position: absolute;
+    top: 221px; /*225*/
+    left: 85px ;/*110px*/
+    visibility: hidden;
+}
+#rev-expresslove {
+    background-position: -126px -88px;
+    width: 100%;
+    position: absolute;
+    top: 36px;
+    font: 27px/27px 'OpenSansSemibold', sans-serif;
+    color: #ec0928;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#rev-dear {
+    width: 57px;
+    position: absolute;
+    top: 94px;
+    left: 26px;    
+    font: 25px/25px 'OpenSansLight', sans-serif;
+    color:#fff;
+}
+input#rev-recip {
+    padding: 0 0 5px 5px;
+    width: 175px;
+    height: 36px;
+    position: absolute;
+    top: 87px;
+    right: 23px;
+    border:1px solid #FFF;
+    background: #000;
+    color: #FFF;
+    z-index: 2;
+}
+#rev-ilu2 {
+    width: 100%;
+    position: absolute;
+    top: 153px;
+    font: 26px / 26px 'OpenSansLight', sans-serif;
+    text-align:center;
+    color: #FFF;
+}
+
+#rev-messages {
+    width: 248px;
+    height:227px;
+    position: absolute;
+    top: 190px;
+    left: 25px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    z-index: 2;
+}
+#rev-messages ul{
+    margin: 0;
+    padding: 0;
+    width: 248px;
+    position: absolute;
+    list-style:none;
+}
+#rev-messages ul li {
+    border-bottom: 1px solid #fff;
+}
+#rev-messages ul li:last-child {
+    border-bottom: none;
+}
+.rev-options{
+   width: 240px;
+   height:45px;
+   padding:0 5px;
+}
+.rev-messages-hover {
+    background:#333 !important;
+}
+.rev-messages-click {
+    background:#ec0928 !important;
+}
+#rev-messages p {
+    font: 17px / 17px 'OpenSansLight', sans-serif;
+    color: #FFF;
+    margin-right: 5px;
+}
+#rev-continue {
+    /*background-position: -5px -88px;*/
+    background:#ec0928;
+    width: 111px;
+    height: 31px;
+    position: absolute;
+    bottom: 118px;
+    left: 94px;
+    font: 13px / 31px 'OpenSansSemibold', sans-serif;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 2;
+}
+
+/* close on expanded*/
+#rev-close-btn{
+    background-position: -188px -226px;
+    width: 54px;
+    height: 53px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    
+    z-index: 6;
+    cursor: pointer;
+}
+
+#rev-close-btn2{
+    background-position: -277px -250px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: -17px;
+    right: -18px;
+    
+    z-index: 6;
+    
+    cursor: pointer;
+}
+
+/*  SHADES */
+#rev-pick, #rev-colorname {
+    position:absolute;
+    top: 17px;
+    right: 350px;
+    font-size: 19px;
+    line-height: 36px;
+    color: #FFF;
+}
+#rev-pick{
+    right: 350px;
+}
+#rev-colorname {
+    width: 227px;
+    left: 269px;
+    background: #58595b;
+    text-align: center;
+}
+#rev-arrow-l, #rev-arrow-r {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 84px;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #FFF transparent transparent;
+    cursor: pointer;
+}
+#rev-arrow-l {
+    left: 9px;
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+    z-index: 2;
+}
+#rev-arrow-r {
+    right: 9px;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    z-index: 2;
+}
+.rev-arrow-disabled {
+    border-color: transparent #333 transparent transparent !important;
+    cursor: default !important;
+}
+#rev-slider-bottom {
+    width: 541px;
+    height: 1px;
+    position: absolute;
+    top: 123px;
+    left: 29px;
+    border-bottom: 1px solid #FFF;
+}
+#rev-slider {
+    width: 541px;
+    height: 60px;
+    position: absolute;
+    top: 63px;
+    left: 29px;
+    border-top: 1px solid #FFF;
+    overflow: hidden;
+    z-index: 2;
+}
+#rev-slider ul {
+    width: 1066px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:9px;
+    left: 0;
+}
+#rev-slider li {
+    margin-left: 26px;
+    width: 26px;
+    height: 52px;
+    position: relative;
+    display: inline-block;
+    text-indent: -9999px;
+}
+#rev-slider div {
+    position: absolute;
+    top:17px;
+    width: 26px;
+    height: 52px; 
+}
+.rev-tip-active {
+    top:0 !important;
+}
+#rev-text1, #rev-text2 {
+    width: 100%;
+    position: absolute;
+    font-size: 33px;
+    color: #FFF;
+    text-align: center;
+}
+#rev-text1 {
+   top: 159px;
+}
+#rev-text2 {
+    top:215px;
+}
+/*
+#rev-note {
+    width: 500px;
+    position: absolute;
+    top:276px;
+    left: 50px;
+    font: 50px/50px "CheddarJack";
+    color: #FFF;
+    text-align: center;
+}
+*/
+#rev-note {
+    width: 550px;
+    position: absolute;
+    top:280px;
+    left: 25px;
+    font: 68px/75px "CheddarJack";
+    color: #FFF;
+    text-align: center;
+   
+    letter-spacing: 1px;
+}
+#rev-note > div{
+    text-align: inherit;
+}
+#rev-note > div{
+    width: 100%;
+    height:155px;
+    text-align: inherit;
+}
+
+.cm{
+    padding: 20px 0px;
+}
+.cm:after{
+    content: ".";
+}
+
+
+#rev-sender {
+    position:absolute;
+    top:453px;
+    right: 350px;
+    font-size:28px;
+    color: #FFF;
+    z-index: 2;
+    font-style: italic;
+
+}
+
+#rev-xo{
+    position:absolute;
+    top:457px;
+    right:446px;
+    font-size:28px;
+    color: #FFF;
+    line-height:41px;
+    z-index: 2;
+}
+input#rev-sender {
+    padding: 0 0 5px 5px;
+    width:307px;
+    height:41px;
+    position: absolute;
+    top: 453px;
+    left: 168px;
+    border: 1px solid #FFF;
+    background: #000;
+    text-align: center;
+    z-index: 2;
+}
+#rev-review {
+    background: #ec0928;
+    width: 194px;
+    height: 39px;
+    position: absolute;
+    top: 540px;
+    left: 202px;
+    font: 16px / 39px 'OpenSansSemibold', sans-serif;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+}
+/*  PREVIEW */
+#rev-prev1, #rev-prev2, #rev-prev4, #rev-prev5 {
+    width: 100%;
+    position: absolute;
+    font-size: 38px;
+    color: #FFF;
+    text-align: center;
+    
+}
+
+#rev-prev1 {
+    top: 50px;
+}
+#rev-prev2 {
+    top: 118px;
+}
+/*
+#rev-prev3 {
+    position: absolute;
+    top:200px;
+    left:50px;
+    font:60px/60px "CheddarJack";
+    text-align: center;
+}
+*/
+#rev-prev3 {
+    width:550px;
+    position: absolute;
+    top:200px;
+    left:25px;
+    font:64px/70px "CheddarJack";
+    text-align: center;
+}
+#rev-prev3 .rev-inner:after{
+    content: ".";
+}
+#rev-prev3 div{
+    text-align:inherit;
+}
+#rev-prev3>div{
+    width: 100%;
+    height: 170px;
+    text-align:inherit;
+}
+#rev-prev4 {
+    top:350px;
+}
+#rev-prev5 {
+    top: 435px;
+    font-size: 14px;    
+}
+
+#rev-prev5 span {
+    font-family: 'OpenSansSemibold', sans-serif;
+}
+#rev-loveison {
+    background-position: -234px -305px;
+    width: 138px;
+    height: 17px;
+    position: absolute;
+    top: 483px;
+    left: 230px;
+}
+
+#rev-logo-lg {
+    background-position: -5px -305px;
+    width: 219px;
+    height: 56px;
+    position: absolute;
+    bottom: 18px;
+    left: 190px;
+}
+
+/*  SHARE */
+#rev-share-tag {
+    background-position: -5px -487px;
+    width: 396px;
+    height: 78px;
+    position: absolute;
+    top: 133px;
+    left: 102px;
+/*
+    font-weight: 600;
+    font-size: 40px;
+*/
+}
+#rev-share-text {
+    background-position: -5px -575px;
+    width: 493px;
+    height: 64px;
+    position: absolute;
+    top: 237px;
+    left: 54px;
+/*
+    font-size: 33px;
+    font-weight: 300;
+*/
+}
+#rev-share-email{
+    background-position: -457px -34px;
+    width: 74px;
+    height: 52px;
+    position: absolute;
+    top: 324px;
+    left: 191px;
+    cursor:pointer;
+    z-index: 2;
+}
+#rev-share-email:hover{
+    background-position: -5px -226px;
+}
+
+#rev-share-fb{
+    background-position: -404px -96px;
+    width: 29px;
+    height: 54px;
+    position: absolute;
+    top: 323px;
+    left: 295px; 
+    cursor:pointer;
+    z-index: 2;
+}
+#rev-share-fb:hover{
+    background-position: -90px -224px;
+}
+#rev-share-ig{
+    background-position: -443px -96px;
+    width: 54px;
+    height: 53px;
+    position: absolute;
+    top: 324px;
+    left: 354px;
+    z-index: 2;
+}
+#rev-share-ig:hover{
+    background-position: -128px -225px;
+}
+
+#rev-share-restart {
+    background: #ea1f2f;
+    width: 159px;
+    height: 45px;
+    position: absolute;
+    top: 436px;
+    left: 221px;
+    font: 16px / 45px 'OpenSansSemibold', sans-serif;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/*  EMAIL */
+#rev-email form {
+    width: 562px;
+    height: 247px;
+    position: absolute;
+    top: 156px;
+    left: 19px;
+    background: #FFF;
+    text-align: center;
+    z-index: 3;
+}
+input#rev-emailto, input#rev-emailfrom {
+    width: 415px;
+    height: 42px;
+    position: absolute;
+    left: 100px;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    
+}
+
+input#rev-emailto { top: 27px; }
+
+input#rev-emailfrom { top: 107px; }
+
+label[for=rev-emailto], label[for=rev-emailfrom] {
+    width: 100px;
+    height: 42px;
+    position: absolute;
+    display: block;
+    right: 472px;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: right;
+
+}
+
+label[for=rev-emailto] { top: 27px; }
+
+label[for=rev-emailfrom] { top: 107px; }
+
+#rev-send {
+    width: 121px;
+    height: 42px;
+    position: absolute;
+    top: 178px;
+    left: 219px;
+    font: 600 20px / 42px 'Open Sans', sans-serif;
+    color:#FFF;
+    text-align: center;
+    background: #ea1f2f;
+    cursor: pointer;
+}
+/* CLASSES - COLORS */
+.rev-azalea { background-position: 0px  -644px; cursor: pointer; }
+.rev-camelia { background-position: -31px  -644px; cursor: pointer; }
+.rev-dahlia { background-position: -62px  -644px; cursor: pointer; }
+.rev-germanium { background-position: -93px  -644px; cursor: pointer; }
+.rev-gladiolus { background-position: -124px  -644px; cursor: pointer; }
+.rev-hibiscus { background-position: -155px  -644px; cursor: pointer; }
+.rev-hydrangea { background-position: -186px  -644px; cursor: pointer; }
+.rev-iris { background-position: -217px  -644px; cursor: pointer; }
+.rev-magnolia { background-position: -248px  -644px; cursor: pointer; }
+.rev-marigold { background-position: -279px  -644px; cursor: pointer; }
+.rev-orchid { background-position: -310px  -644px; cursor: pointer; }
+.rev-peony { background-position: -341px  -644px; cursor: pointer; }
+.rev-petunia { background-position: -372px  -644px; cursor: pointer; }
+.rev-poinsettia { background-position: -403px  -644px; cursor: pointer; }
+.rev-poppy { background-position: -434px  -644px; cursor: pointer; }
+.rev-primrose { background-position: -465px  -644px; cursor: pointer; }
+.rev-rose { background-position: -496px  -644px; cursor: pointer; }
+.rev-snapdragon { background-position: -527px  -644px; cursor: pointer; }
+.rev-sweetpea { background-position: -558px  -644px; cursor: pointer; }
+.rev-tulip { background-position: -589px  -644px; cursor: pointer; }
+
+/* CLASSES - OTHER */
+.rev-solidblack { background: rgb(0,0,0,1) !important};
+.rev-preview-border { border-color: #FFF !important; }
+.rev-outer { display: table; }
+.rev-inner { display: table-cell; vertical-align: middle; }
+.rev-show { display:block !important; }
+.rev-hide { display:none !important; }
+
+/* SCROLLBAR */
+#rev-scrollbar-track {
+    width:7px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+#rev-scrollbar {
+    width:15px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+#rev-scrollbar-core {
+    width:7px;
+    height:100%;
+    background: #ec0928;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+/*  TESTING  */
+#rev-expanded {display: none;}
+/*#rev-shades {display: none;}*/
+#rev-preview {display: none;}
+/*#rev-share {display: none;}*/

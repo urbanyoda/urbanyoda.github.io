@@ -1,0 +1,422 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*PRIMARY CONTAINERS*/
+
+#main {
+    width: 728px;
+    height: 270px;
+    position: relative;
+}
+
+#expanded {
+    width: 728px;
+    height: 270px;
+    position: absolute;
+    z-index:100;
+    display:none;
+    overflow: hidden;
+    border:1px solid #333;
+}
+
+#collapsed {
+    background: #fff5ec;
+    width: 728px;
+    height: 90px;
+    position: absolute;
+    overflow: hidden;
+    border:1px solid #333;
+    cursor: pointer;
+}
+
+
+/*BLOCKS*/
+
+#paintcans {
+    background:url(../images/paintcans.png) no-repeat;
+    width: 87px;
+    height: 61px;
+    position: absolute;
+    top: 17px;
+    right: 124px;
+}
+
+#available-sm {
+    background:url(../images/nowavailable-sm.png) no-repeat;
+    width: 88px;
+    height: 55px;
+    position: absolute;
+    top:18px;
+    right: 11px;
+}
+
+#available-lg {
+    background:url(../images/nowavailable-lg.png) no-repeat;
+    width: 198px;
+    height: 40px;
+    position: absolute;
+    left: 14px;
+    bottom: 12px;
+}
+
+#tagline1 {
+    background:url(../images/tagline1.png) no-repeat;
+    width: 256px;
+    height: 44px;
+    position: absolute;
+    top:26px;
+    left: 228px;
+}
+
+#tagline2 {
+    background:url(../images/tagline2.png) no-repeat;
+    width: 311px;
+    height: 44px;
+    position: absolute;
+    top: 8px;
+    left: 204px;
+}
+
+#painter {
+    background:url(../images/painter.png) no-repeat;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 7px;
+    right: 221px;
+}
+
+#expand {
+    background:url(../images/expand.png) no-repeat;
+    background-position: 0 0;
+    width: 254px;
+    height: 32px;
+    position: absolute;
+    left: 219px;
+    bottom: 3px;
+}
+
+#painton {
+    background:url(../images/painton.png) no-repeat;
+    width: 98px;
+    height: 11px;
+    position: absolute;
+    right: 12px;
+    bottom: 11px;
+    cursor: pointer;
+}
+
+#trycolor {
+    background:url(../images/trycolor.png) no-repeat;
+    width: 165px;
+    height: 15px;
+    position: absolute;
+    left:19px;
+    bottom: 12px;
+    cursor: pointer;
+}
+
+#tabs {
+    text-align:right;
+    position: absolute;
+    top:240px;
+    right:28px;
+    font-size: 0;
+}
+
+#tab1 {
+    background:url(../images/aboutcoll.png) no-repeat;
+    width: 131px;
+    height: 11px;
+    margin: 11px auto 0;
+    bottom: 0;
+    right:20px;
+}
+#taba {
+    cursor:pointer;
+}
+
+#popup {
+    background:url(../images/popup.png) no-repeat;
+    width: 449px;
+    height: 180px;
+    cursor:pointer;
+    
+}
+
+#popuphit {
+    width: 200px;
+    height: 35px;
+    left: 155px;
+    bottom: 10px;
+    position: absolute;
+    cursor:pointer;
+}
+
+#newcursor {
+    width: 43px;
+    height: 57px;
+    position: absolute;
+    background: url(../images/hand.png) no-repeat;
+    z-index: 100;
+}
+
+#base {
+    width: 728px;
+    height: 270px;
+    position: absolute;
+    background: url(../images/base.png) no-repeat;
+}
+
+#gradient {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    background: url(../images/gradient.png) repeat-x;
+    bottom:0;
+}
+
+#room1 {
+    width: 227px;
+    height: 181px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#room2 {
+    width: 227px;
+    height: 75px;
+    position: absolute;
+    top: 176px;
+    left: 0px;
+}
+
+#room3 {
+    width: 261px;
+    height: 181px;
+    position: absolute;
+    top: 0px;
+    left: 233px;
+}
+
+#room4 {
+    width: 261px;
+    height: 79px;
+    position: absolute;
+    top: 176px;
+    left: 233px;
+}
+
+#room5 {
+    width: 228px;
+    height: 178px;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+}
+
+#room6 {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: 176px;
+    left: 533px;
+}
+
+#paletteholder {
+    height: 207px;
+    position: absolute;
+    top: 20px;
+    padding: 0px 1px;
+    background: #f7f7f7;
+    box-shadow: 6px 7px 11px 0px rgba(0,0,0,0.35);
+}
+
+#palettename {
+    width: 200px;
+    height: 11px;
+    margin: 13px auto;
+    background: url(../images/colorhead.png) no-repeat;
+}
+
+#palette {
+    width: 209px;
+    height: 110px;
+    margin:0 6px;
+/*    cursor: url(images/hand.png) 15 0;*/
+    cursor: url(images/brush.png) 4 33;
+    /* IE - relative to the HTML */
+/*    cursor: url(../images/hand.png) 15 0, auto;*/
+    cursor: url(../images/brush.png) 4 33, auto;
+    /* Modern - relative to the CSS */
+}
+
+#paletterow {
+    width: 100%;
+    padding: 10px 0 1px 0;
+    overflow: hidden;
+}
+
+#paletterow > div:nth-child(1) {
+    float: left;
+    cursor: pointer;
+}
+
+#paletterow > div:nth-child(2) {
+    float: right;
+    cursor: pointer;
+}
+
+#selectroom {
+    width: 226px;
+    height: 55px;
+    position: absolute;
+    top: 122px;
+    left: 264px;
+    background: url(../images/selectroom.png) no-repeat;
+}
+
+#closebtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(51, 51, 51, 1);
+/*  background: url(../images/closebtn.png) no-repeat;
+    width: 27px;
+    height: 28px;
+    */
+    text-align: right;
+    cursor: pointer;
+}
+
+/* CLASSES */
+
+.logo-sw {
+    background:url(../images/sw.png);
+    width: 144px;
+    height: 49px;
+    top: 19px;
+    left: 23px;
+    position: absolute;
+    z-index:500;
+}
+
+.logo-lowes {
+    background:url(../images/lowes.png) no-repeat;
+    width: 66px;
+    height: 30px;
+    position: absolute;
+}
+
+.tab {
+    border-radius:6px 6px 0 0;
+    background:#14b5e3;
+    width: 170px;
+    height: 31px;
+    display: inline-block;
+}
+
+.color {
+    width: 18%;
+    height: 23%;
+    float: left;
+    margin: .9%;
+}
+
+.color:hover {
+   border:2px solid #14b5e3;
+}
+
+.openbtn {
+    background:url(../images/circlebrush.png) no-repeat;
+    width: 67px;
+    height: 71px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.openbtn-sm {
+    background:url(../images/circlebrush-sm.png) no-repeat;
+    width: 52px;
+    height: 54px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.openbtn.hover {
+    background-position: -67 0;
+}
+/* HELPERS */
+
+.draggable {}
+
+.show {
+    visibility: visible
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*OVERRIDES*/
+
+#collapsed .logo-lowes {
+    top: 25px;
+    right: 12px;
+}
+
+#expanded .logo-lowes {
+    bottom: 8px;
+    right: 7px;
+}
+
+#room1 .openbtn {
+    top:96px;
+    left: 142px;
+}
+#room2 .openbtn-sm {
+    top: 35px;
+    left: 200px;
+}
+#room3 .openbtn {
+    top:52px;
+    left: 157px;
+}
+#room4 .openbtn-sm {
+    top: 30px;
+    left: 170px;
+}
+#room5 .openbtn {
+    top:86px;
+    left: 72px;
+}
+#room6 .openbtn-sm {
+    top: 25px;
+    left: 33px;
+}
+
+.pos1 {
+    left: 258px;
+}
+.pos2 {
+    left: 503px;
+}
