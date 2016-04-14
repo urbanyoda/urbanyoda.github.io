@@ -168,7 +168,7 @@ body {
   width: 203px;
   height: 40px;
   border: 1px solid #FFF;
-  padding: 7px;
+  padding: 3px;
   display: table;
 }
 
@@ -259,10 +259,23 @@ body {
 	background-position: 0 -100px;
 }
 
+/*
 #crates {
 	width: 154px;
 	height: 96px;
 	background-position: 0 -187px;
+}
+*/
+#crates {
+	width: 154px;
+	height: 96px;
+    overflow: hidden;
+    position: absolute;
+}
+
+#crates img {
+  position: absolute;
+  top: -187px;
 }
 
 #truckcrates {
@@ -295,7 +308,7 @@ body {
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
-    transform: rotate(0.01deg);
+/*    transform: rotate(0.01deg);*/
     position: absolute;
 }
 

@@ -11,11 +11,12 @@ var scrollDTC = {
 	
 	//INTITIALIZE
 	init:function(){
-		if (Enabler.isInitialized()) {
-		    scrollDTC.enablerInitHandler();
-		} else {
-		    Enabler.addEventListener(studio.events.StudioEvent.INIT, scrollDTC.enablerInitHandler);
-		}
+        scrollDTC.enablerInitHandler();
+//		if (Enabler.isInitialized()) {
+//		    scrollDTC.enablerInitHandler();
+//		} else {
+//		    Enabler.addEventListener(studio.events.StudioEvent.INIT, scrollDTC.enablerInitHandler);
+//		}
 	},
 	//LOAD SPRITESHEET
 	loadSpriteSheet:function(){
@@ -74,7 +75,7 @@ var scrollDTC = {
 		clickTagArr = [$clicktag2];
 		for(var i = 0; i<clickTagArr.length;i++){
 			clickTagArr[i].click(function(){
-				Enabler.exit('exit', clickTag);
+//				Enabler.exit('exit', clickTag);
 			})
 			clickTagArr[i].css('cursor','pointer');
 		}
@@ -88,7 +89,7 @@ var scrollDTC = {
 		  disableScroll: true,
 		  stopPropagation: false,
 		  callback: function(index, elem) {
-			  Enabler.counter('swipe_count', true);
+//			  Enabler.counter('swipe_count', true);
 			  firstRun = false;
 			  oldIndex = newIndex;
 			  newIndex = index;

@@ -30,11 +30,13 @@ var ctr = (function (){
 	
 	//INTITIALIZE
 	var init = function(){
-		if (Enabler.isInitialized()) {
-		    enablerInitHandler();
-		} else {
-		    Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
-		}
+//		if (Enabler.isInitialized()) {
+//		    enablerInitHandler();
+//		} else {
+//		    Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+//		}
+      
+    enablerInitHandler();
 	};
 	
 	//PRELOAD SPRITESHEETS

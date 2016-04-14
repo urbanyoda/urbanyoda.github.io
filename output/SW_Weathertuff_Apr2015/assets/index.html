@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>slotmachine_300x600</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>weather_300x250_H5</title>
 
 <!--<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>-->
 <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
@@ -10,28 +11,23 @@
 <script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
 <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
-<script src="slotmachine_300x600.js"></script>
+<script src="weather_300x250_H5.js"></script>
 
 <script>
 var canvas, stage, exportRoot;
-
-function checkInit() {
-    if (!EB.isInitialized())
-    {
-      EB.addEventListener(EBG.EventName.EB_INITIALIZED, wait);
-      // checks if the EB object is initialized, if no - launches the function "wait" which loops back to the function "checkInit" until the EB object is initialized. if it is done initializing - will run the "onInit" function.
-    }
-    else
-    {
-      init();
-    }
-}
     
-function wait()
-  {
-    checkInit(); //loops back to the checkInit function until the EB object is initialized.
-  }
-
+function checkInit() {
+  init();
+//    if (!EB.isInitialized())
+//    {
+//      EB.addEventListener(EBG.EventName.EB_INITIALIZED, init);
+//      // checks if the EB object is initialized, if no - launches the function "wait" which loops back to the function "checkInit" until the EB object is initialized. if it is done initializing - will run the "onInit" function.
+//    }
+//    else
+//    {
+//      init();
+//    }
+}
 
 function init() {
 	canvas = document.getElementById("canvas");
@@ -48,7 +44,7 @@ function handleFileLoad(evt) {
 }
 
 function handleComplete() {
-	exportRoot = new lib.slotmachine_300x600();
+	exportRoot = new lib.weather_300x250_H5();
 
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);
@@ -57,14 +53,11 @@ function handleComplete() {
 	createjs.Ticker.setFPS(lib.properties.fps);
 	createjs.Ticker.addEventListener("tick", stage);
 }
-
+    
 </script>
 </head>
 
-<body style="padding:0; margin:0">
-	<canvas id="canvas" width="300" height="600" style="background-color:#FFFFFF; border: 1px solid #000"></canvas>
-	<script>init();</script>
+<body onload="checkInit();" style="padding:0; margin:0">
+	<canvas id="canvas" width="300" height="250" style="background-color:#FFFFFF; "></canvas>
 </body>
-
-
 </html>

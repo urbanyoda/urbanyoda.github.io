@@ -2,68 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>weather_300x250_H5</title>
-
-<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
-<script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
-<script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
-<script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
-<script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
-<script src="weather_300x250_H5.js"></script>
-
-<script>
-var canvas, stage, exportRoot;
-    
-function checkInit() {
-    if (!EB.isInitialized())
-    {
-      EB.addEventListener(EBG.EventName.EB_INITIALIZED, wait);
-      // checks if the EB object is initialized, if no - launches the function "wait" which loops back to the function "checkInit" until the EB object is initialized. if it is done initializing - will run the "onInit" function.
-    }
-    else
-    {
-      init();
-    }
-}
-    
-function wait()
-  {
-    checkInit(); //loops back to the checkInit function until the EB object is initialized.
-  }
-
-//checkInit();
-
-function init() {
-	canvas = document.getElementById("canvas");
-	images = images||{};
-
-	var loader = new createjs.LoadQueue(false);
-	loader.addEventListener("fileload", handleFileLoad);
-	loader.addEventListener("complete", handleComplete);
-	loader.loadManifest(lib.properties.manifest);
-}
-
-function handleFileLoad(evt) {
-	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-}
-
-function handleComplete() {
-	exportRoot = new lib.weather_300x250_H5();
-
-	stage = new createjs.Stage(canvas);
-	stage.addChild(exportRoot);
-	stage.update();
-
-	createjs.Ticker.setFPS(lib.properties.fps);
-	createjs.Ticker.addEventListener("tick", stage);
-}
-    
-</script>
+<title>Shwerin Williams 2014</title>
+<link href="../../css/header.css" rel="stylesheet" type="text/css">
 </head>
-
-<body onload="checkInit();" style="background-color:#D4D4D4">
-	<canvas id="canvas" width="300" height="250" style="background-color:#FFFFFF"></canvas>
-</body>
+	<body class="thisbody">
+</head>
+	<body>
+        <h1>Sherwin Williams Weathertuff campaign </h1>
+        <p>Banner  |  HTML5 with CreateJS, JavaScript, Greensock (GSAP) </p>
+		<div id="flashContent">
+        <iframe id="newContent" src="assets/index.html" name="newFrame" scrolling="no" noresize="noresize"</iframe>
+        </div>
+	</body>
 </html>

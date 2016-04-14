@@ -282,17 +282,17 @@
         case 'room2':
           currImage = imageObj2;
           $paletteholder.addClass("pos1");
-          EB.userActionCounter("PB2");
+//          EB.userActionCounter("PB2");
           break;
         case 'room4':
           currImage = imageObj4;
           $paletteholder.addClass("pos2");
-          EB.userActionCounter("PB5");
+//          EB.userActionCounter("PB5");
           break;
         case 'room6':
           currImage = imageObj6;
           $paletteholder.addClass("pos1");
-          EB.userActionCounter("PB6");
+//          EB.userActionCounter("PB6");
           break;
         }
         $paletteholder.on('mouseleave', function (e) {
@@ -309,17 +309,17 @@
         case 'room1':
           currImage = imageObj1;
           $paletteholder.addClass("pos1");
-          EB.userActionCounter("PB1");
+//          EB.userActionCounter("PB1");
           break;
         case 'room3':
           currImage = imageObj3;
           $paletteholder.addClass("pos2");
-          EB.userActionCounter("PB3");
+//          EB.userActionCounter("PB3");
           break;
         case 'room5':
           currImage = imageObj5;
           $paletteholder.addClass("pos1");
-          EB.userActionCounter("PB5");
+//          EB.userActionCounter("PB5");
           break;
         }
         $paletteholder.on('mouseleave', function (e) {

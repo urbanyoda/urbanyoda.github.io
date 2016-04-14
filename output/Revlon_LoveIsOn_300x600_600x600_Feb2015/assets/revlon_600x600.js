@@ -85,11 +85,12 @@ var ctr = (function (){
     
 	//INTITIALIZE
 	var init = function(){
-		if (Enabler.isInitialized()) {
+      politeInit();
+		/*if (Enabler.isInitialized()) {
 		    enablerInitHandler();
 		} else {
 		    Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
-		}
+		}*/
 	};
     
     var enablerInitHandler = function(){
@@ -110,11 +111,7 @@ var ctr = (function (){
 //    
     //PRELOAD JQUERY; CHECK IF ASSETS LOADED
 	var politeInit = function(){
-        if (debug) {
-            loadJsCssFile('http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js',setupElements);
-        } else {
-            loadJsCssFile('//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js', setupElements);
-        }
+        loadJsCssFile('https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js',setupElements);
 	};
 	
 	//PRELOAD SPRITESHEETS
@@ -144,7 +141,7 @@ var ctr = (function (){
 	
 	//SETUP ELEMENTS
 	var setupElements = function(){
-        
+        console.log("moo");
         if (firstRun) {
             //Set variables
             $loader = $('#rev-loader');
@@ -220,16 +217,16 @@ var ctr = (function (){
             //LOAD REMAINING JAVASCRIPT AND CSS	FILES
 
             if (debug) {
-                loadJsCssFile('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js');
+                loadJsCssFile('https://ajax.googleapis.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js');
                 loadJsCssFile('http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js', removeLoader);
             } else {
 
-                loadJsCssFile('//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js');
-                loadJsCssFile('//cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/utils/Draggable.min.js');
-                loadJsCssFile('//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js', removeLoader);
+                loadJsCssFile('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js');
+                loadJsCssFile('http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/utils/Draggable.min.js');
+                loadJsCssFile('http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js', removeLoader);
             }
             //loadJsCssFile('http://frederickjaime.info/Revlon/extract/rev-styles.css');
-            loadJsCssFile('http://frederickjaime.info/Revlon/extract/html2canvas.js');
+            loadJsCssFile('html2canvas.js');
         }
 	};
 	
@@ -247,11 +244,11 @@ var ctr = (function (){
     };
     
     var addListeners = function (){ 
-        Enabler.setExpandingPixelOffsets('300','0');
+        /*Enabler.setExpandingPixelOffsets('300','0');
         Enabler.addEventListener(studio.events.StudioEvent.EXPAND_START, showExpanded);
         Enabler.addEventListener(studio.events.StudioEvent.EXPAND_FINISH, setupSlider);
         Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_START, reInit);
-        Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_FINISH, selectMessages);
+        Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_FINISH, selectMessages);*/
         //Enabler.addEventListener(studio.events.StudioEvent.EXIT, onExit);
     };
         /*Enabler.addEventListener(studio.events.StudioEvent.EXPAND_START, onExpandStart);
@@ -367,7 +364,8 @@ var ctr = (function (){
         msgSelected = true;
         $continue.click(function(){
             console.log (msgSelected);
-            if (msgSelected) Enabler.requestExpand(); 
+            if (msgSelected) showExpanded(); 
+//            if (msgSelected) Enabler.requestExpand(); 
         });
     };
            
@@ -375,10 +373,11 @@ var ctr = (function (){
         sendto = $recip.val();
         $collapsed.addClass('rev-hide');
         $expanded.addClass('rev-show');
-        if (!debug) Enabler.finishExpand();
+//        if (!debug) Enabler.finishExpand();
+        if (!debug) setupSlider();
         $sharerestart.on('click',function(){
-            Enabler.requestCollapse();
-            
+//            Enabler.requestCollapse();
+            reInit();
             $share.removeClass('rev-show');
             $share.addClass('rev-hide');
             
@@ -388,7 +387,8 @@ var ctr = (function (){
 
         });
         $closebtn.click( function() {
-            Enabler.requestCollapse();
+//            Enabler.requestCollapse();
+          reInit()
            $share.removeClass('rev-show');
             $share.addClass('rev-hide');
            
@@ -511,11 +511,11 @@ var ctr = (function (){
                 var params = "image=" + output + "&filedir=" + "rendered";
                 $.ajax({
                     type: "POST",
-                    url: "http://frederickjaime.info/Revlon/extract/savePNG.php",
+                    url: "http://urbanyoda.github.io/output/Revlon_LoveIsOn_300x600_600x600_Feb2015/assets/savePNG.php",
                     data: params,
                     success : function(data){
                         console.log("screenshot done");
-                        imgurl = 'http://frederickjaime.info/Revlon/extract/' + data;
+                        imgurl = 'http://urbanyoda.github.io/output/Revlon_LoveIsOn_300x600_600x600_Feb2015/assets/' + data;
                         console.log(imgurl);
                         $preview.removeClass('rev-preview-border');
                         

@@ -1,139 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="ad.size" content="width=600,height=600">
-    <!--DOUBLE-CLICK SIZE-->
-    <title>Revlon-600x600</title>
-<!--    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>-->
-    <!--MAIN CSS FILE-->
-    <link rel="stylesheet" href="rev-styles.css">
-    <script type="text/javascript" src="//s0.2mdn.net/ads/studio/Enabler.js"></script>
-    <!--<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ['Open Sans']
-        }
-      });
-    </script>-->
-    <!--DOUBLE-CLICK ENABLER-->
-    <script type="text/javascript" src="revlon_600x600.js"></script>
-    
-
-    <!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-    <style>
-        #rev-loader {
-            width: 300px;
-            height: 250px;
-            background: #f08700;
-            position: relative;
-            top: 0;
-            left: 0;
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 20px;
-            line-height: 250px;
-            color: #660460;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            z-index: 400;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Shwerin Williams 2014</title>
+<link href="../../css/header.css" rel="stylesheet" type="text/css">
 </head>
-
-<body class="body">
-    <div id="rev-container">
-        <!--    <div id="rev-loader" class="gradient">Loading...</div> -->
-        <div id="rev-copyright" class="rev-images"></div>
-        <div id="rev-collapsed">
-           <div id="rev-intro">
-                <div id="rev-background"></div>     
-                <div id="rev-youre">you're</div>
-                <div id="rev-bold">bold</div>
-                <div id="rev-brilliant">brilliant</div>
-                <div id="rev-intense">intense</div>
-                <div id="rev-lipstick" class="rev-images"></div>
-                <div id="rev-ilu" class="rev-iloveyou">I love you because</div>
-                <div id="rev-expresshare">Express &amp; share your love</div>
-                <div id="rev-sendnote" class="rev-images"></div>
-            </div>
-            <!-- end rev-intro-->
-            <div id="rev-form">
-                <div id="rev-expresslove">Express your love</div>
-                <div id="rev-dear">Dear</div>
-                <input id="rev-recip" type="text" maxlength="15">
-                <div id="rev-ilu2">I love you because...</div>
-                <div id="rev-messages"></div>
-                <div id="rev-continue">Continue</div>
-                <form method="POST" enctype="multipart/form-data" action="saveimage.php" id="myForm">
-                    <input type="hidden" name="img_val" id="img_val" value="" />
-                </form>
-            </div>
-            <!-- end rev-form-->
-            <div id="rev-logo" class="rev-images"></div>
-            <div class="rev-exit"></div> <!-- clicktag -->
+	<body class="thisbody">
+</head>
+	<body>
+        <h1>Sherwin Williams Weathertuff campaign </h1>
+        <p>Banner  |  HTML5 with CreateJS, JavaScript, Greensock (GSAP) </p>
+		<div id="flashContent">
+        <iframe id="newContent" src="assets/index.html" name="newFrame" scrolling="no" noresize="noresize"</iframe>
         </div>
-        <!-- end rev-collapsed-->
-        <div id="rev-expanded">
-                <div id="rev-close-btn" class="rev-images"></div>
-            <div id="rev-shades">
-                <div id="rev-pick">PICK A SHADE</div>
-                <div id="rev-colorname">&nbsp;</div>
-                <div id="rev-arrow-l"></div>
-                <div id="rev-slider"></div>
-                <div id="rev-slider-bottom"></div>
-                <div id="rev-arrow-r"></div>
-                <div id="rev-text1"></div>
-                <div id="rev-text2">I love you because</div>
-                <div id="rev-xo">xo</div>
-                <div id="rev-note"><div class="rev-outer"><div class="rev-inner"></div>
-                </div> </div>
-                <input id="rev-sender" placeholder="your name" maxlength="15">
-                <div id="rev-review">Review your note</div>
-            </div>
-            <!-- end rev-shades -->
-            <div id="rev-preview">
-                <div id="rev-prev1"></div>
-                <div id="rev-prev2">I love you because</div>
-                <div id="rev-prev3"></div>
-                <div id="rev-prev4"></div>
-                <div id="rev-prev5"></div>
-                <div id="rev-loveison" class="rev-images"></div>
-                <div id="rev-logo-lg" class="rev-images"></div>
-            </div>
-            <!-- end rev-preview -->
-            <div id="rev-share">
-                <div id="rev-share-tag" class="rev-images"></div>
-                <div id="rev-share-text" class="rev-images"></div>
-                <div id="rev-share-email" class="rev-images"></div>
-                <div id="rev-share-fb" class="rev-images"></div>
-                <a  id="rev-share-ig"
-                    href="http://frederickjaime.info/Revlon/extract/download.php?image="
-                    class="rev-images"></a>
-
-                <!--<div id="rev-share-ig" class="rev-images"></div>-->
-                <div id="rev-share-restart">send another</div>
-            </div>
-            <div id="rev-email">
-                <form method="POST" enctype="multipart/form-data" action="sendEmail.php" id="myEmail">
-                    <div id="rev-close-btn2" class="rev-images"></div>
-                    <label for="rev-emailto">To:</label>
-                    <input type="text" name="rev-emailto" id="rev-emailto" value="" placeholder="email address"/>
-                    <label for="rev-emailfrom">From:</label>
-                    <input type="text" name="rev-emailfrom" id="rev-emailfrom" value="" placeholder="email address"/>
-                    <div id="rev-send">SEND</div>
-                </form>
-            </div>
-            <!-- end rev-share-->
-            <div class="rev-exit"></div> <!-- clicktag -->
-        </div>
-        <!-- end rev-expanded-->
-    </div>
-    <!-- end rev-container-->
-</body>
+	</body>
 </html>

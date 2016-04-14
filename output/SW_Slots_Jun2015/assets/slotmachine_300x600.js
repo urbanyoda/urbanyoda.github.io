@@ -6,7 +6,7 @@ var p; // shortcut to reference prototypes
 lib.properties = {
 	width: 300,
 	height: 600,
-	fps: 24,
+	fps: 30,
 	color: "#FFFFFF",
 	manifest: [
 		{src:"images/cans.png", id:"cans"},
@@ -572,7 +572,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 					break;
 				case "click":
 					console.log("click");
-					EB.clickthrough();
+//					EB.clickthrough();
 					break;
 			}
 		}
