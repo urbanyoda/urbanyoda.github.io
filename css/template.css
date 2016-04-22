@@ -18,9 +18,9 @@ body {
 	-moz-border-radius:10px;
 	border-radius:10px;
 }
-#greyLogo{
-	width:151px;   
-    margin:0 auto 10px;
+#myLogo{
+	width:100px;   
+    margin:20px auto 10px;
 }
 #clientLogo {
 	margin-top:10px;
@@ -44,11 +44,11 @@ h1{
 	line-height:20px;
 	/* font-weight:bold; */
 	color:#fff;
-	background:#a1a0a3;
+	/* background:#a1a0a3; */
 	margin-top:20px;
 	margin-bottom:10px;
 	text-transform:uppercase;
-	padding:2px 5px;
+	padding: 2px 5px 4px 0;
 	border-bottom:#8a0a0a solid 2px;
 }
 h2{
