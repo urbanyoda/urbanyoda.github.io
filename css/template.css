@@ -50,7 +50,7 @@ body {
 	padding-top:0px;
 }
 h1{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Monserrat', Helvetica, Arial, sans-serif;
 	font-size:12px;
     line-height:20px;
 	font-weight:bold;
@@ -63,14 +63,14 @@ h1{
 	border-bottom:#8a0a0a solid 2px;
 }
 h2{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Monserrat', Helvetica, Arial, sans-serif;
 	font-size:14px;
 	font-weight:bold;
 	color:#0066CC;
 	margin-bottom:10px;
 }
 h3{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Monserrat', Helvetica, Arial, sans-serif;
 	font-size:14px;
 	font-weight:bold;
 	color:#a1a0a3;
@@ -82,7 +82,7 @@ ul{
 }
 li{
 	list-style:none;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Open Sans', Helvetica, Arial, sans-serif;
 	font-size:14px;
 	color:#a1a0a3;
 	margin:10px 0;
@@ -94,7 +94,7 @@ a:hover{
 	color:#000;
 }
 #legal{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Open Sans', Helvetica, Arial, sans-serif;
 	font-size:10px;
 	text-align:center;
 	color:#fff;
