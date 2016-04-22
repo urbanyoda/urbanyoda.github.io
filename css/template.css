@@ -89,6 +89,7 @@ li{
 }
 a{
 	color:#8a0a0a;
+    text-decoration: none;
 }
 a:hover{
 	color:#000;
