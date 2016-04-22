@@ -40,9 +40,9 @@ body {
 }
 h1{
 	font-family:'Monserrat', Helvetica, Arial, sans-serif;
-	font-size:12px;
-    line-height:20px;
-	font-weight:bold;
+	font-size:14px;
+	line-height:20px;
+	/* font-weight:bold; */
 	color:#fff;
 	background:#a1a0a3;
 	margin-top:20px;
@@ -77,7 +77,7 @@ li{
 	margin:10px 0;
 }
 a{
-	color:#8a0a0a;
+	color:#ffffff;
     text-decoration: none;
 }
 a:hover{
