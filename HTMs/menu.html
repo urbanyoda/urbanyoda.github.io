@@ -15,7 +15,18 @@
 <![endif]-->
 </head>
 <body>
-    
+    <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+        <filter id="drop-shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
+            <feOffset dx="0" dy="0" result="offsetblur"/>
+            <feFlood flood-color="rgba(0,0,0,0.5)"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </svg>
 	<div id="container">
 		<div id="myLogo"><img src="../IMGs/SA_white_sm2.png" width="100%" alt="logo" /> </div>
 		<div id="content">
