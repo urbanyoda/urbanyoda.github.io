@@ -79,11 +79,11 @@ li{
 	margin:10px 0;
 }
 a{
-	color:#ffffff;
-    text-decoration: none;
+	color: #bbb;
+	text-decoration: none;
 }
 a:hover{
-	color:#000;
+	color: #fc0;
 }
 #legal{
 	font-family:'Open Sans', Helvetica, Arial, sans-serif;
